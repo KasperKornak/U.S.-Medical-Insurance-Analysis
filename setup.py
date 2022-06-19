@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='Medical Insurance Cost',
     version='1.0',
-    packages=['csv','matplotlib','numpy','seaborn'],
+    packages=['csv','matplotlib','numpy','seaborn','pandas'],
     url='',
     license='',
     author='Kasper Kornak',
