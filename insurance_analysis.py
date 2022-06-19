@@ -113,13 +113,10 @@ def bmi_price():
         x_plot.append(sorted_list[i][0])
         y_plot.append(sorted_list[i][1])
 
-    coef = np.polyfit(x_plot,y_plot, 5)
     plt.scatter(x_plot,y_plot, s =2)
-    plt.plot(x_plot ,np.polyval(coef, x_plot), 'k--')
-    plt.title('Polynomial Regression of relationship between BMI and insurance charges',fontsize = 10)
+    plt.title('Scatterplot of individuals concerning BMI and insurance price',fontsize = 10)
     plt.xlabel('BMI')
     plt.ylabel('Insurance cost in USD')
-    plt.gca().legend(('individuals' ,'polynomial regression'))
     plt.show(block = False)
     plt.pause(3)
     plt.close('all')
@@ -167,11 +164,15 @@ def age_kids():
     y3 = round(kids['2 kids']/kids_2)
     y4 = round(kids['3 or more']/kids_more)
     y = [y1, y2, y3, y4]
+    default_x_ticks = range(len(x))
+    labs = ['Zero', 'One', 'Two', 'Three or more']
 
     plt.bar(x,y)
     plt.title('Number of children and average age of parent', fontsize=10)
     plt.xlabel('Number of children')
     plt.ylabel('Average age')
+    plt.xticks(default_x_ticks, labs)
+    plt.ylim(ymin=32, ymax=42)
     plt.show(block=False)
     plt.pause(3)
     plt.close('all')
