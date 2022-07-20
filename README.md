@@ -112,7 +112,7 @@ Last, but not least, I have a confession to make. At the last stages of writing 
   <img src="https://user-images.githubusercontent.com/80947256/174461170-17e00991-485d-4031-8320-d51c61bd4a8b.png" />
 </p>
 My intuition was right and BMI doesn't affect insurance charge as much as age.
-You might say, "But this heatmap shows clearly that correlation between age and BMI is stronger than between BMI and children!'. This is correct but it shows correlations between whole data, data including females. I have one item on my TODO that I'll be more to happy to do in my freetime concerning Dad bods stay tuned!
+You might say, "But this heatmap shows clearly that correlation between age and BMI is stronger than between BMI and children!'. This is correct but it shows correlations between whole data, data including females. 
 
 Thank you for reading this analysis, I really encourage you to play around with my code. This was a great learning experience and I hope you enjoyed it.
 
